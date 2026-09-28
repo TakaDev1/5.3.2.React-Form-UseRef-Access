@@ -6,7 +6,7 @@ const SizeAlert = () => {
   return (
     <>
       <form onSubmit={handleSubmit}>
-        <fieldset>
+        <fieldset className="space-x-2 text-white">
           <legend>サイズ</legend>
           <label>
             <input type="radio" name="size" ref={smallRef} />小
@@ -18,7 +18,12 @@ const SizeAlert = () => {
             <input type="radio" name="size" ref={largeRef} />大
           </label>
         </fieldset>
-        <button type="submit">確認</button>
+        <button
+          type="submit"
+          className="bg-gray-500 my-10 rounded-full text-white w-1/5 py-1 hover:opacity-80 cursor-pointer"
+        >
+          確認
+        </button>
       </form>
     </>
   );
